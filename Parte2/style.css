@@ -1,6 +1,4 @@
-header,.content{
-  display: none;
-  }
+
   
 
   /*
@@ -33,20 +31,36 @@ header,.content{
     justify-content: space-evenly;
 }
 
+    @media (max-width: 599px) {
+      .content {
+        display: none;
+      }
+    
+      ul.nav {
+        display: flex;
+        flex-flow: column;
+      }
+
+      header,.content{
+        display: none;
+      }
+    }
 
   /*Device = Tablets, Ipads (portrait)
     Screen = B/w 600px to 990px*/
     @media (min-width:600px) and (max-width: 990px)  {
-  
+      header,.content{
+        display: none;
+      }
       .nav {
+
+    
 /*
 (2) Agrega el código necesartio de flex para que los elementos de navegación aparezcan en filas como en la imagen.
 */
         height: auto;
     
       }
-
-
 
       .content{
         display: flex;
@@ -81,25 +95,34 @@ header,.content{
         border-width: 1px;
         justify-content: flex-start;
     }
-  }
-  
+    }
   
   @media (min-width:991px) {
-  
+    
     header {
-/*
-(3) Agrega codigo flex para que aparezcan los encabezados. (Solo necesitas activar flex)
-
-*/      
-      }
-
-      .nav {
+      display: flex;
+    }
+  
+    article.article {
+      display: flex;
+   }
+  
+    ul.nav {
+      display: flex;
+      justify-content: space-evenly;
+    }
+  
+    li {
+      width: 25%;
+    }
+    
+    .nav {
 /*
 (3.1) Utiliza el mismo .nav del media query anterior
 */
         height: auto;
 
-      }
+    }
 
     h2 {
         border: solid;
