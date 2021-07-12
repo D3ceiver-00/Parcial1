@@ -19,9 +19,9 @@ Funciones 1 -  Crea una funcion llamada "mayusculas" que:
 */
 
 // CREA TU FUNCION MAYUSCULAS aqui:
-
-
-
+function mayusculas(array){
+    console.log(array.toUpperCase());
+}
 
 /*
 Funciones 2 -  Crea una funcion llamada "calculateDogAge" que: 
@@ -34,10 +34,11 @@ Funciones 2 -  Crea una funcion llamada "calculateDogAge" que:
 */
 
 // CREA TU FUNCION calculateDogAge aqui:
+function calculateDogAge(age){
+    var doggoage = age*7;
 
-
-
-
+    console.log(`Tu perro tiene ${doggoage} años perro.`);
+}
 
 /*
 
@@ -60,15 +61,15 @@ fahrenheitToCelsius(95) --> 35
 
 */
 
-
-
-
 // CREA TUS FUNCIONES  aqui:
+function celsiusToFahrenheit(tempC){
+    console.log(celsiusToFahrenheit(tempC));
+    //var fahrenheit=
+}
 
-
-
-
-
+function fahrenheitToCelsius(tempF){
+    console.log(fahrenheitToCelsius(tempF));
+}
 
 /*  OBJETOS 
 
@@ -78,7 +79,6 @@ A) Define un objeto tipo "Perro" que reciba 3 parametros
 2) Color
 3) Raza
 
-
 B) Crea 3 objectos  con diferentes valores.
 
 C) Con un console.log escribe el nombre del primer objeto, el color del segundo, y la raza del tercero. Lo puedes hacer en una sola línea o en 3 lineas aparte. 
@@ -86,6 +86,23 @@ C) Con un console.log escribe el nombre del primer objeto, el color del segundo,
 
 */
 
+var doggo = {
+    nombre: "chems",
+    color: "dorado",
+    raza: "chitsu"
+};
+
+var buffer = {
+    nombre: "lomito",
+    color: "negro",
+    raza: "husky"
+};
+
+var perro ={
+    nombre: "firulaiz",
+    color: "blanco",
+    raza: "dalmata"
+};
 
 
 /***
@@ -100,15 +117,14 @@ calculateDogAge(4);
 celsiusToFahrenheit(35)
 fahrenheitToCelsius(95)
 
-
-
-
-
 /***
  * 
  *        PRUEBA TUS OBJETOS AQUI
  * 
  ***/
+console.log(doggo.nombre());
+console.log(buffer.raza());
+console.log(perro.color());
 
 
 </script>
