@@ -20,7 +20,8 @@ Funciones 1 -  Crea una funcion llamada "mayusculas" que:
 
 // CREA TU FUNCION MAYUSCULAS aqui:
 function mayusculas(array){
-    console.log(array.toUpperCase());
+    var uppercase = String.prototype.toUpperCase.apply(array).split(",");
+    console.log(uppercase);
 }
 
 /*
@@ -63,12 +64,14 @@ fahrenheitToCelsius(95) --> 35
 
 // CREA TUS FUNCIONES  aqui:
 function celsiusToFahrenheit(tempC){
-    console.log(celsiusToFahrenheit(tempC));
+    fahrenheit=(tempC*9/5)+32;
+    console.log(fahrenheit);
     //var fahrenheit=
 }
 
 function fahrenheitToCelsius(tempF){
-    console.log(fahrenheitToCelsius(tempF));
+    celcius = (tempF-32)*(5/9);
+    console.log(celcius);
 }
 
 /*  OBJETOS 
@@ -122,9 +125,9 @@ fahrenheitToCelsius(95)
  *        PRUEBA TUS OBJETOS AQUI
  * 
  ***/
-console.log(doggo.nombre());
-console.log(buffer.raza());
-console.log(perro.color());
+console.log(doggo.nombre);
+console.log(buffer.raza);
+console.log(perro.color);
 
 
 </script>
